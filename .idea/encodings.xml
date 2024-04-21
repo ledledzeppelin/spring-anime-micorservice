@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/spring-anime-api-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-anime-config-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-anime-config-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-anime-discovery-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-anime-test-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
