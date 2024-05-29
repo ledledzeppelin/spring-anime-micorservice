@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.spring.anime.review.mapper.ReviewMapper">
+
+    <resultMap id="reviewMap" type="org.spring.anime.review.model.Review">
+        <id property="id" column="id"/>
+        <result property="likes" column="likes"/>
+        <result property="comment" column="comment"/>
+        <result property="rating" column="rating"/>
+        <result property="user" column="user"/>
+        <result property="date" column="date"/>
+        <result property="animation_id" column="animation_id"/>
+    </resultMap>
+
+
+    <select id="getReviewsByAnimationId" resultMap="reviewMap">
+        SELECT * FROM reviews WHERE animation_id = #{animationId}
+    </select>
+
+    <insert id="addReview" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO reviews (rating, user, comment, likes, date, animation_id)
+        VALUES (#{rating}, #{user}, #{comment}, #{likes}, #{date}, #{animation_id})
+    </insert>
+
+</mapper>

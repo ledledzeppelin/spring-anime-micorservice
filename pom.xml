@@ -22,6 +22,9 @@
     <module>spring-anime-discovery-server</module>
     <module>spring-anime-test-service</module>
     <module>spring-anime-api-gateway</module>
+      <module>spring-anime-user-service</module>
+    <module>spring-anime-animation-service</module>
+    <module>spring-anime-review-service</module>
   </modules>
 
   <properties>

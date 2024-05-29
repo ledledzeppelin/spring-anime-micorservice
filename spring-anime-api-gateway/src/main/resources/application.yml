@@ -6,12 +6,25 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: test-service
-          uri: lb://test-service
+        - id: user-service
+          uri: lb://user-service
           predicates:
-            - Path=/api/vet/**
+            - Path=/api/user/**
           filters:
             - StripPrefix=2
+        - id: anime-service
+          uri: lb://anime-service
+          predicates:
+            - Path=/api/anime/**
+          filters:
+            - StripPrefix=2
+        - id: review-service
+          uri: lb://review-service
+          predicates:
+            - Path=/api/review/**
+          filters:
+            - StripPrefix=2
+
 
 ---
 spring:

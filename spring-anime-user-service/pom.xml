@@ -7,12 +7,12 @@
         <version>3.2.0</version>
     </parent>
 
-    <groupId>org.spring.anime.test</groupId>
-    <artifactId>spring-anime-test-service</artifactId>
+    <groupId>org.spring.anime.user</groupId>
+    <artifactId>spring-anime-user-service</artifactId>
     <packaging>jar</packaging>
     <description>test</description>
 
-    <name>spring-anime-test-service</name>
+    <name>spring-anime-user-service</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -24,6 +24,25 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
+            <version>3.5.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.31</version> <!-- 你的MySQL连接器版本号 -->
         </dependency>
         <!-- Spring Cloud -->
         <dependency>

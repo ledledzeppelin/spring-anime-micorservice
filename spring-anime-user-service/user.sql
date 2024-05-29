@@ -1,0 +1,26 @@
+SET NAMES utf8mb4;
+
+SET FOREIGN_KEY_CHECKS = 0;
+
+
+
+
+
+DROP TABLE IF EXISTS `users`;
+
+CREATE TABLE users (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    account VARCHAR(255) NOT NULL,
+    nickname VARCHAR(255) NOT NULL,
+    avatar VARCHAR(255),
+    password VARCHAR(255) NOT NULL
+)ENGINE = InnoDB AUTO_INCREMENT = 12 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+INSERT INTO `users` (account,nickname, avatar, password) VALUES
+('18837143417','张三', NULL, '123456'),
+('14529234517','李四', NULL, '123456'),
+('13989474576','王五', NULL, '123456');
+
+
+SET FOREIGN_KEY_CHECKS = 1;
+

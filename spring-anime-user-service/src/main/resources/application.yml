@@ -1,0 +1,31 @@
+spring:
+
+  cloud:
+    config:
+      enabled: false
+
+  application:
+    name: user-service
+  config:
+    import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888/}
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/anime
+    username: root
+    password: hf20030819
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+eureka:
+  client:
+    enabled: false
+
+
+
+server:
+  port: 8081
+
+
+
+
+
